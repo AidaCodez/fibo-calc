@@ -1,1 +1,6 @@
+#project compiled binaries
 fibo
+
+# Qt build directories
+build-*/
+fibo1/build/*
