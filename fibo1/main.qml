@@ -38,6 +38,7 @@ Window {
         }
 
         Rectangle{
+            id: button
             height: 30
             width: 260
             radius: 20
@@ -48,6 +49,14 @@ Window {
                 text: qsTr("Calculate")
                 anchors.centerIn: parent
                 color: "black"
+            }
+
+            MouseArea{
+                anchors.fill: parent
+                onClicked: {
+                    var b = inputT.text
+                    output.text = calc.calculate(b)
+                }
             }
         }
 
